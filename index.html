@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+<section id="projects" class="projects">
+    <h2 class="projects_title">Mes projets</h2>
+    <section id="cards" class="cards">
+        <div class="card">
+            <h3 class="card_title">Mon premier projet js</h3>
+            <img class="card_img" src="./assets/images/1.png"  alt="">
+            <p class="card_text"> ce projet javascript est un site portfolio</p>
+        </div>
+        <div class="card">
+            <h3 class="card_title">Mon premier projet react</h3>
+            <img class="card_img" src="./assets/images/1.png"  alt="">
+            <p class="card_text"> ce projet javascript est un site portfolio</p>
+        </div>
+        <div class="card">
+            <h3 class="card_title">Mon premier projet node</h3>
+            <img class="card_img" src="./assets/images/1.png"  alt="">
+            <p class="card_text"> ce projet javascript est un site portfolio</p>
+        </div>
+    </section>
+</section>
+
+<section id="new-project" class="new-project">
+    <h2>Ajouter un projet a mon portfolio</h2>
+    <form onsubmit="handleSubmit(event)" id="new-project-from" class="new-project-form" action="">
+        <div class="new-project-form_input-group">
+        <label for="project-title">titre du project</label>
+        <input type="text" name="project-title" id="project-title">
+    </div>
+        <div class="new-project-form_input-group">
+        <label for="project-link">lien d'une image  en ligne</label>
+        <input type="text" name="project-img-link" id="project-img-link">
+    </div>
+    <div class="new-project-form_input-group new-project-form_input-group-textrea">
+            <label for="project-text">description</label>
+            <textarea  name="project-text" id="project-text" row="10"></textarea>
+    </div>
+    <button class="new-project_button" type="submit">créer le projet</button>
+</section>
+    <script src="main.js"></script>
+</body>
+</html>
